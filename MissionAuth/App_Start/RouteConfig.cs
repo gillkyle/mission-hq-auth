@@ -14,6 +14,12 @@ namespace MissionAuth
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+                name: "Mission",
+                url: "Mission/{action}/{name}",
+                defaults: new { controller = "Mission", action = "Details", name = UrlParameter.Optional }
+            );
+
+            routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }

@@ -58,11 +58,11 @@ namespace MissionAuth
             //   appId: "",
             //   appSecret: "");
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+                ClientId = "537959859403-g0c99hjj4ghiph7q9io7pqotsojsde5t.apps.googleusercontent.com",
+                ClientSecret = "nP54HBkDQiSUfS5zmiL7Qhg-"
+            });
         }
     }
 }
